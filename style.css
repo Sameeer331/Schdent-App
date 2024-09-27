@@ -1,0 +1,375 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    background: #f4f4f4; /* Example background color */
+    padding: 10px 0px; /* Padding for the header */
+   
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: space-between; /* Space between logo, nav, and buttons */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0b0b0b; /* Logo color */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0px 15px; /* Space between navigation items */
+}
+
+nav ul li a {
+    color: #263238; /* Link color */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 25px; /* Space between the login and signup buttons */
+}
+
+.auth-buttons a {
+    color: #ffffff; /* Button link color */
+    text-decoration: none;
+    padding: 8px 15px;
+    margin-right: 0px;
+    border-radius: 5px; /* Rounded corners for buttons */
+    background: #f39c12; /* Button background color */
+}
+
+.auth-buttons a.login {
+    background: #EEEEEE; /* Different color for login button */
+    color:#0b0b0b;
+    border-radius: 3px;
+  
+}
+
+
+.auth-buttons a.signup {
+    background: #EEEEEE; /* Different color for signup button */
+    color:#0b0b0b;
+    border-radius: 3px;
+}
+
+/* Main Section Styles */
+.main-section {
+    padding: 50px 0; /* Space above and below main section */
+    display: flex;
+    justify-content: space-between; /* Space between text and image content */
+}
+
+.text-content {
+    max-width: 600px; /* Limit text content width */
+}
+
+.text-content h1 {
+    font-size: 36px; /* Heading size */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.text-content p {
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+}
+
+.btn-primary, .btn-secondary {
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none;
+    color: white; /* Text color */
+}
+
+.btn-primary {
+    background: #f39c12; /* Primary button color */
+}
+
+.btn-secondary {
+    background: #F5F5F5; /* Secondary button color */
+    color:#0b0b0b;
+}
+
+/* Image Content Styles */
+.image-content {
+    position: relative; /* Allows for absolute positioning of child elements */
+}
+
+.image-content img {
+    max-width: 100%; /* Responsive image */
+}
+
+.user-avatars {
+    display: flex;
+    gap: 10px; /* Space between avatars */
+    margin-top: 10px; /* Space above avatars */
+}
+
+/* About Us Section Styles */
+.about-us {
+    padding: 50px 0; /* Space above and below about section */
+    background: #f2f2f2; /* Background color for section */
+}
+
+.features {
+    display: flex;
+    justify-content: space-between; /* Space between feature cards */
+    margin-top: 20px; /* Space above features */
+}
+
+.feature-card {
+    flex: 1; /* Flex property for equal width */
+    padding: 20px;
+    background: #ffffff; /* Card background color */
+    text-align: center; /* Center align text */
+    border-radius: 10px; /* Rounded corners */
+    margin: 0 10px; /* Space between cards */
+}
+
+.feature-card img {
+    max-width: 50px; /* Icon size */
+    margin-bottom: 10px; /* Space below icon */
+}
+
+/* Platform Section Styles */
+.platform {
+    padding: 50px 0; /* Space above and below platform section */
+    text-align: center; /* Center align text */
+}
+
+/* Categories Section Styles */
+.categories {
+    padding: 50px 0; /* Space above and below categories section */
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 20px; /* Space between categories */
+}
+
+.category-item {
+    background: #e0e0e0; /* Background color for category items */
+    padding: 20px; /* Space inside category items */
+    text-align: center; /* Center align text */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Guide Tips & Newsletter Section Styles */
+.guide-tips {
+    padding: 50px 0; /* Space above and below guide tips section */
+    background: #4A90E2; /* Background color for section */
+    color: #ffffff; /* Text color */
+}
+
+.guide-content, .newsletter {
+    margin-bottom: 20px; /* Space below guide content and newsletter */
+}
+
+.guide-content h3, .newsletter h3 {
+    margin-bottom: 10px; /* Space below headings */
+}
+
+.newsletter form {
+    display: flex; /* Flex for form layout */
+}
+
+.newsletter input {
+    flex: 1; /* Take remaining space */
+    padding: 10px; /* Padding for input */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.newsletter button {
+    padding: 10px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    background: #f39c12; /* Button background color */
+    color: white; /* Text color */
+}
+
+/* User Images */
+.user-imge {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+}
+
+.user-imge img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 0;
+    background-color: #ffffff; /* Light background color */
+    text-align: center; /* Center align all content */
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #263238;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.testimonial-card {
+    background-color: #f2f2f2; /* Light grey background for cards */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    flex: 1;
+    max-width: 300px; /* Ensures cards have a consistent width */
+    text-align: center;
+    margin: 0 auto; /* Center cards on small screens */
+}
+
+.testimonial-card img {
+    width: 80px; /* Size of the student image */
+    height: 80px;
+    border-radius: 50%; /* Circular images */
+    object-fit: cover; /* Ensure image doesn’t stretch */
+    margin-bottom: 15px; /* Space below image */
+}
+
+.testimonial-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0b0b0b;
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    color: #555555; /* Slightly muted text */
+    margin-bottom: 15px;
+}
+
+.university img {
+    width: 100px; /* Size of the university logo */
+    margin-bottom: 10px;
+}
+
+.stars {
+    font-size: 18px;
+    color: #FFD700; /* Gold star color */
+}
+
+/* Footer Section */
+.footer {
+    background-color: #E8EAF6; /* Dark background for footer */
+    color: #333333; /* White text color */
+    padding: 40px 0;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between; /* Space between footer columns */
+    flex-wrap: wrap; /* Responsive layout */
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1; /* Ensures columns take up equal space */
+    min-width: 200px; /* Prevents columns from getting too narrow */
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #f39c12; /* Accent color for column titles */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #333333; /* Link color */
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: #f39c12; /* Hover effect for links */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Space between social icons */
+    margin-top: 15px;
+}
+
+.social-icons img {
+    width: 24px; /* Icon size */
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #333333; /* Separator line */
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    color: #6D4C41;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
